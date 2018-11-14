@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/min/main.css">
+  <title>Gulp Demo</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/Sass-logo.png" alt="Sass">
+    </div>
+    <nav class="nav">
+      <div class="menu-item active">flexbox</div>
+      <div class="menu-item">grid</div>
+      <div class="menu-item">var</div>
+    </nav>
+  </div>
+
+  <article>
+    <h2>Section title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum omnis deserunt dolores rerum itaque tenetur illum
+      voluptatibus, sapiente ducimus recusandae accusantium est accusamus cum, magnam necessitatibus perferendis
+      reprehenderit dolorum et.</p>
+    <p>Exercitation consequat fugiat ipsum amet dolore labore eu mollit do nulla adipisicing ad eu. Aliquip ut minim
+      occaecat excepteur. Nisi dolore in elit occaecat enim aute. Labore laborum non do nisi aliqua commodo sunt
+      aliquip nostrud excepteur excepteur eu quis. Esse eiusmod dolore tempor non veniam ea aliqua magna voluptate
+      adipisicing tempor. Laborum sint aliquip voluptate anim incididunt duis officia consequat qui incididunt. Esse
+      fugiat qui minim ad sunt est et.</p>
+  </article>
+
+  <script>
+    const initMenu = function () {
+      const menuItems = document.querySelectorAll('.menu-item')
+      menuItems.forEach(item => {
+        item.addEventListener('click', event => {
+          menuItems.forEach(item => {
+            item.classList.remove('active')
+          })
+          event.target.classList.add('active')
+        })
+      })
+    }
+    initMenu()
+  </script>
+</body>
+
+</html>

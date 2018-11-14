@@ -1,0 +1,71 @@
+@import 'normalize';
+@import 'base';
+
+/* Global Sass variables */
+$brand-color: hsl(330, 55%, 60%);
+
+/* Add styles here */
+.navbar {
+  /* Class scoped Sass variable */
+  $height: 70px;
+
+  align-items: center;
+  background-color: hsl(0, 0%, 97%);
+  border-bottom: 3px solid hsl(0, 0%, 94%);
+  display: flex;
+  height: $height;
+
+  // Use sudo element to overlay the border on top of the menu-item
+  &::before {
+    content: ' ';
+    border-top: 2px solid $brand-color;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  .logo {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 1rem;
+
+    img {
+      height: calc(100% - 1.5rem);
+      width: auto;
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menu-item {
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    color: darken(desaturate($brand-color, 35%), 20%);
+    display: flex;
+    flex-grow: 1;
+    height: $height;
+    justify-content: center;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: hsl(0, 0%, 94%);
+      cursor: pointer;
+    }
+
+    // psudo class applied by the browser when element is clicked
+    &:active,
+    // regular class added/removed by javascript in our app
+    &.active {
+      border-color: lighten(desaturate($brand-color, 30%), 27%);
+    }
+  }
+}

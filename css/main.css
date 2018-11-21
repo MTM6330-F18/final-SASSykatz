@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(../../fonts/fonts.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -328,6 +329,15 @@ article {
   padding: 2rem 1rem; }
 
 /* Global Sass variables */
+body {
+  font-family: 'Gotham Book';
+  font-size: 1rem; }
+
+h1,
+h2 {
+  font-family: 'Gotham Bold';
+  font-size: 2rem; }
+
 /* Add styles here */
 .navbar {
   /* Class scoped Sass variable */

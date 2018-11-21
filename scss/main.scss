@@ -1,8 +1,19 @@
 @import 'normalize';
 @import 'base';
-
+@import '../../fonts/fonts.css';
 /* Global Sass variables */
 $brand-color: hsl(330, 55%, 60%);
+
+body {
+  font-family: 'Gotham Book';
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-family: 'Gotham Bold';
+  font-size: 2rem;
+}
 
 /* Add styles here */
 .navbar {

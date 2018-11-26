@@ -329,3 +329,74 @@ article {
   padding: 2rem 1rem; }
 
 /* Global Sass Color variables */
+body {
+  background-color: #f7f8f7;
+  font-family: 'Gotham-Medium', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  body .page {
+    width: 80%;
+    height: 1000px;
+    background-color: #e8e8e8;
+    margin: 0 auto; }
+    body .page .teacher-container {
+      width: auto;
+      height: auto;
+      max-width: 1050px;
+      background-color: #323932;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding-left: 3rem; }
+      body .page .teacher-container .teacher {
+        margin-left: -35px;
+        width: 200px;
+        height: 200px;
+        background-color: #00613f;
+        position: relative;
+        -webkit-clip-path: polygon(16% 0, 98% 0, 84% 100%, 2% 100%);
+        clip-path: polygon(16% 0, 98% 0, 84% 100%, 2% 100%);
+        display: flex; }
+        body .page .teacher-container .teacher .fas {
+          z-index: 1;
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          opacity: 0;
+          transition: 0.8s ease-out; }
+        body .page .teacher-container .teacher .icon1 {
+          color: white; }
+        body .page .teacher-container .teacher .icon2 {
+          color: #ffd900; }
+        body .page .teacher-container .teacher .icon3 {
+          color: #0051ad; }
+        body .page .teacher-container .teacher .icon4 {
+          color: white; }
+        body .page .teacher-container .teacher .icon5 {
+          color: #ff75f4; }
+        body .page .teacher-container .teacher p {
+          z-index: 1;
+          color: #fff;
+          text-align: center;
+          opacity: 0;
+          margin-left: 45px;
+          margin-top: 75px;
+          transition: 0.8s ease-out;
+          cursor: pointer; }
+        body .page .teacher-container .teacher img {
+          position: absolute;
+          top: 0;
+          lert: 0;
+          width: 200px;
+          height: 200px;
+          filter: contrast(1.2) brightness(0.7) grayscale(100%);
+          mix-blend-mode: soft-light;
+          transition: 0.8s ease-out; }
+      body .page .teacher-container .teacher:hover p, body .page .teacher-container .teacher:hover .fas {
+        opacity: 1;
+        transition: 0.2s ease-in; }
+      body .page .teacher-container .teacher:hover img {
+        mix-blend-mode: normal;
+        filter: contrast(1) brightness(1) grayscale(0%);
+        transform: scale(1.02);
+        transition: 0.5s ease-in;
+        cursor: pointer; }

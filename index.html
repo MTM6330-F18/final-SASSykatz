@@ -6,33 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/min/main.css">
+  <link rel="stylesheet" href="css/min/nav.css">
+  <link rel="stylesheet" href="css/min/landing.css">
   <title>Final SassyKatz</title>
 </head>
 
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <img src="img/Sass-logo.png" alt="Sass">
+
+  <header>
+    <div class="banner">
+      <div class="logo"><a href="index.html"><img src="./img/AC_WORDMARK_FC_GRN.png" alt="algonquin college logo"></a></div>
+      <h1>INTERACTIVE MEDIA DESIGN</h1>
     </div>
-    <nav class="nav">
-      <div class="menu-item active">flexbox</div>
-      <div class="menu-item">grid</div>
-      <div class="menu-item">var</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Overview<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Full Description</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Career Pathways</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tuition & Fees</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Faculty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Equipment</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+  </header>
+
+  <div class="page">
+    <main>
+      <div class="splash">
+        <div class="section full-size">
+          <img src="./img/pexels-270348.jpg" alt="">
+        </div>
+        <div class="section">
+          <h2>Learn to create
+            engaging digital
+            media with audio,
+            video, graphical, and
+            web technologies</h2>
+        </div>
+      </div>
+      <div class="section green">
+        <h3>PROGRAM INFORMATION</h3>
+        <p>This two-year Ontario College Diploma program is designed to prepare students for a variety of careers
+          in the digital media industry. Students explore the primary elements of media project planning and
+          development with equal importance given to the creative and the technical aspects. Strong emphasis is
+          placed on hands-on media production through courses in web development, digital imaging, authoring,
+          animation, photography and video. Students plan and execute individual and team-based projects and
+          gain practical experience working with live clients. The curriculum is delivered on a variety of platforms
+          including Apple OS X, Windows and a variety of mobile operating systems.</p>
+      </div>
+      <div id="lower-section">
+        <div class="section">
+          <div class="button">Check Program Availability</div>
+          <div class="section green">
+            <h2>Apply Now</h2>
+            <div class="button">Domestic</div>
+            <div class="button">International</div>
+          </div>
+        </div>
+        <div class="section green">
+          <p><b>Credential:</b> Ontario College Diploma <br>
+            <b>Duration:</b> 2 Years<br>
+            <b>Area Of Interest:</b> Arts and Design<br>
+            <b>Program Code:</b> 6149X01FWO<br>
+            <b>Academic Year:</b> Sept 2018 - Aug 2019<br>
+            <b>Campus:</b> Ottawa</p>
+          <hr>
+        </div>
+      </div>
+
+    </main>
   </div>
-
-  <article>
-    <h2>Test</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum omnis deserunt dolores rerum itaque tenetur illum
-      voluptatibus, sapiente duimus recusandae accusantium est accusamus cum, magnam necessitatibus perferendis
-      reprehenderit dolorum et.</p>
-    <p>Exercitation consequat fugiat ipsum amet dolore labore eu mollit do nulla adipisicing ad eu. Aliquip ut minim
-      occaecat excepteur. Nisi dolore in elit occaecat enim aute. Labore laborum non do nisi aliqua commodo sunt
-      aliquip nostrud excepteur excepteur eu quis. Esse eiusmod dolore tempor non veniam ea aliqua magna voluptate
-      adipisicing tempor. Laborum sint aliquip voluptate anim incididunt duis officia consequat qui incididunt. Esse
-      fugiat qui minim ad sunt est et.</p>
-  </article>
-
   <script>
     const initMenu = function () {
       const menuItems = document.querySelectorAll('.menu-item')
@@ -48,5 +113,11 @@
     initMenu()
   </script>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
 
 </html>

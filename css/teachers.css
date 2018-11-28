@@ -6665,10 +6665,13 @@ body header {
   padding-top: 8rem; }
 
 body .page {
-  width: 80%;
+  width: 100%;
   height: 1000px;
   background-color: #e8e8e8;
   margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    body .page {
+      width: 80%; } }
   body .page h1 {
     padding-top: 1rem;
     text-align: center; }
@@ -6682,7 +6685,8 @@ body .page {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-left: 3rem; }
+    padding-left: 3rem;
+    margin-bottom: 2rem; }
     body .page .selector-container .selector-item {
       margin-left: -35px;
       width: 200px;
@@ -6736,3 +6740,50 @@ body .page {
       transform: scale(1.02);
       transition: 0.2s ease-in;
       cursor: pointer; }
+
+.info-container {
+  margin-top: 2rem;
+  background-color: #212721;
+  border-radius: 10px;
+  max-width: 1050px;
+  margin: 0 auto; }
+  .info-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; }
+  .info-container .info-body {
+    background-color: #f7f8f7;
+    border-radius: 10px;
+    border-left: #00613f 10px solid;
+    -webkit-clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%); }
+    .info-container .info-body .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      .info-container .info-body .info img {
+        margin: 2rem;
+        box-shadow: 0 0 0 10px #67a28e, 0 0 0 15px rgba(103, 162, 142, 0.3), 0 0 0 20px rgba(103, 162, 142, 0.3); }
+      .info-container .info-body .info .body {
+        margin: 1.5rem;
+        width: 50%; }
+      .info-container .info-body .info .line {
+        height: inherit;
+        margin: 2rem 0 2rem 0;
+        width: 3px;
+        background-color: #67a28e;
+        transform: rotate(7deg); }
+      .info-container .info-body .info .profile {
+        margin: 2rem; }
+        .info-container .info-body .info .profile h2 {
+          font-size: 1.1rem;
+          font-weight: bold;
+          line-height: 0.2rem; }
+        .info-container .info-body .info .profile h3 {
+          font-size: 0.9rem;
+          font-style: italic;
+          font-weight: 600; }
+    .info-container .info-body .facts {
+      margin: 2rem; }
+    .info-container .info-body ul {
+      padding-bottom: 2rem; }

@@ -5,10 +5,13 @@ header{
     padding-top: 8rem;
 }
 .page{
-    width: 80%;
+    width: 100%;
     height: 1000px;
     background-color: $body;
     margin: 0 auto;
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+    }
 h1{
     padding-top: 1rem;
     text-align: center;
@@ -24,6 +27,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 padding-left: 3rem;
+margin-bottom: 2rem;
     .selector-item {
         margin-left: -35px;
         width: 200px;
@@ -93,4 +97,69 @@ padding-left: 3rem;
 }
 }
 }
+}
+
+.info-container{
+    margin-top: 2rem;
+    background-color: $charcoal;
+    border-radius: 10px;
+    max-width: 1050px;
+    margin: 0 auto;
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    .info-body{
+        background-color: $bg;
+        border-radius: 10px;
+        border-left: $ac-green 10px solid;
+        -webkit-clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+        .info{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            img{
+                margin: 2rem;
+                box-shadow:
+                0 0 0 10px $ac-light,
+                0 0 0 15px rgba($ac-light, 0.3) ,
+                0 0 0 20px rgba($ac-light, 0.3) ;
+            }
+            .body{
+                margin: 1.5rem;
+                width: 50%;
+            }
+            .line {
+                height: inherit;
+                margin: 2rem 0 2rem 0;
+                width: 3px;
+                background-color: $ac-light;
+                transform: rotate(7deg);
+            }
+            .profile {
+                margin: 2rem;
+                h2 {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    line-height: 0.2rem;
+                }
+                h3{
+                    
+                    font-size: 0.9rem;
+                    font-style: italic;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+        .facts {
+            margin: 2rem;
+            }
+            ul{
+                padding-bottom: 2rem;
+            }
+
+    }
 }

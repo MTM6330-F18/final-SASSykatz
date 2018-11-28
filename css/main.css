@@ -311,7 +311,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -329,3 +329,64 @@ article {
   padding: 2rem 1rem; }
 
 /* Global Sass Color variables */
+body {
+  background-color: #f7f8f7; }
+
+p,
+a {
+  font-family: 'Gotham Book'; }
+
+strong {
+  font-weight: 800; }
+
+h1 {
+  font-family: 'Gotham Bold'; }
+
+h2,
+h3,
+h4 {
+  font-family: 'Gotham Medium'; }
+
+.section {
+  padding: 2rem; }
+
+.full-size {
+  padding: 0; }
+
+.splash {
+  width: 100%;
+  height: 350px;
+  display: flex; }
+  .splash .section {
+    flex-grow: 1;
+    height: 100%; }
+    .splash .section h2 {
+      color: #00613f; }
+    .splash .section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .splash .section:first-child {
+    flex-grow: 2; }
+
+#lower-section {
+  height: 500px;
+  background-image: url("../../img/slr-camera-3752509_1920.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem; }
+  #lower-section .section {
+    width: 20%;
+    flex-grow: 1;
+    height: 80%; }
+  #lower-section div {
+    border-radius: 5px;
+    opacity: 0.9; }
+
+.green {
+  background-color: #00613f;
+  color: white; }
+  .green h3 {
+    color: white; }

@@ -6,35 +6,39 @@ $navbar-padding-y: 0;
 $nav-link-padding-y:  0.7rem;
 $navbar-dark-active-color: $gray;
 @import '../node_modules/bootstrap/scss/bootstrap';
-nav {
 
-li{
-    font-weight: 600;
-}
-// li:nth-child(1) {
-//     margin-left: 3rem;
-// }
-li a:hover{
-    background-color: rgba($charcoal, .3);
- }
- .active a{
-    background-color: rgba($charcoal, .3);
- }
- .navbar-toggler{
-     margin: 0 auto;
- }
- 
-}
-
-        nav.navbar.navbar-expand-lg.navbar-dark.bg-primary{
-            padding-left: 0;
-            padding-right: 0;
-
-        }
-        li:nth-child(1) {
-            margin-left: 0;
+nav{
+    .navbar.navbar-expand-lg.navbar-dark.bg-primary {
+        padding-left: 0;
+        padding-right: 0;
+    }
+      
+    li:nth-child(1) {
+        margin-left: 0;
+    }
+    li{
+        font-weight: 600;
     }
     a{
         text-align: center;
     }
+    .navbar-toggler{
+        margin: 0 auto;
+    }
+    li a:hover{
+        background-color: rgba($charcoal, .3);
+    }
+    .active a{
+        background-color: rgba($charcoal, .3);
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+ nav {
+     li:nth-child(1) {
+        margin-left: 7rem;
+        }
+    }
+} 
 

@@ -15,3 +15,21 @@ $body: hsl(0, 0%, 91%);
 $bg: hsl(120, 8%, 97%);
 //  hsl(0, 0%, 93%)
 
+/* Main bootstrap colors */
+
+$primary: $ac-green;
+$secondary: $gray;
+$success: $new-green;
+// $info: $cyan !default;
+// $warning: $yellow !default;
+// $danger: $red !default;
+$light: $ac-light;
+$dark: $charcoal;
+$font-family-sans-serif: 'Gotham Medium',
+'Segoe UI',
+Tahoma,
+Geneva,
+Verdana,
+sans-serif;
+
+@import '../node_modules/bootstrap/scss/bootstrap';

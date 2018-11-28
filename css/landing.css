@@ -331,6 +331,12 @@ article {
 
 /* Global Sass Color variables */
 /* Main bootstrap colors */
+.page {
+  width: 80%;
+  height: 1000px;
+  background-color: #e8e8e8;
+  margin: 0 auto; }
+
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6981,6 +6987,12 @@ article {
 
 /* Global Sass Color variables */
 /* Main bootstrap colors */
+.page {
+  width: 80%;
+  height: 1000px;
+  background-color: #e8e8e8;
+  margin: 0 auto; }
+
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors

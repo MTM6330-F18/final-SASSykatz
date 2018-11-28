@@ -32,4 +32,11 @@ Geneva,
 Verdana,
 sans-serif;
 
+.page {
+  width: 80%;
+  height: 1000px;
+  background-color: $body;
+  margin: 0 auto;
+}
+
 @import '../node_modules/bootstrap/scss/bootstrap';

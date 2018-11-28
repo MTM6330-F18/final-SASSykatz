@@ -1,4 +1,5 @@
 @import 'main';
+@import 'nav';
 
 body {
   background-color: $bg;
@@ -25,6 +26,7 @@ h3,
 h4 {
   font-family: 'Gotham Bold';
 }
+
 
 .section {
   padding: 2rem;

@@ -1,0 +1,72 @@
+@import 'main';
+
+$navbar-dark-color:#fff;
+$navbar-dark-hover-color: $gray;
+$navbar-padding-y: 0;
+$nav-link-padding-y: 0.7rem;
+$navbar-dark-active-color: $gray;
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.banner {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        margin-top: 10px;
+        height: 100px;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 120px;
+        flex-basis: 50%;
+        color: $ac-green;
+    }
+}
+
+nav {
+
+    li {
+        font-weight: 600;
+    }
+
+    // li:nth-child(1) {
+    //     margin-left: 3rem;
+    // }
+    li a:hover {
+        background-color: rgba($charcoal, .3);
+    }
+
+    .active a {
+        background-color: rgba($charcoal, .3);
+    }
+
+    .navbar-toggler {
+        margin: 0 auto;
+    }
+
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+li:nth-child(1) {
+    margin-left: 0;
+}
+
+a {
+    text-align: center;
+}

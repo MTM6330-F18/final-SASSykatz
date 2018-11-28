@@ -6652,6 +6652,14 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Gotham-Medium", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f7f8f7; }
+  body .page {
+    width: 100%;
+    height: 1000px;
+    background-color: #e8e8e8;
+    margin: 0 auto; }
+    @media only screen and (min-width: 768px) {
+      body .page {
+        width: 80%; } }
   body h1 {
     font-size: 2.1rem;
     font-weight: 600; }
@@ -13005,3 +13013,23 @@ nav .active a {
 @media only screen and (min-width: 768px) {
   nav li:nth-child(1) {
     margin-left: 7rem; } }
+
+.banner {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between; }
+  .banner .logo {
+    margin-top: 10px;
+    height: 100px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .banner .logo img {
+      object-fit: contain; }
+  .banner h1 {
+    font-size: 40px;
+    line-height: 120px;
+    flex-basis: 50%;
+    color: #00613f; }

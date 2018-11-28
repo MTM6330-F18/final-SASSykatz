@@ -329,3 +329,87 @@ article {
   padding: 2rem 1rem; }
 
 /* Global Sass Color variables */
+body {
+  background-color: #f7f8f7; }
+
+p,
+a {
+  font-family: 'Gotham Book';
+  font-size: 1rem;
+  font-weight: 100; }
+
+strong {
+  font-weight: 800; }
+
+h1 {
+  font-family: 'Gotham Bold';
+  font-weight: 1200; }
+
+h2,
+h3,
+h4 {
+  font-family: 'Gotham Bold'; }
+
+.banner {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between; }
+  .banner .logo {
+    margin-top: 10px;
+    height: 100px;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .banner .logo img {
+      object-fit: contain; }
+  .banner h1 {
+    font-size: 40px;
+    line-height: 120px;
+    flex-basis: 50%;
+    color: #00613f; }
+
+.section {
+  padding: 2rem;
+  width: 100%; }
+
+.full-size {
+  padding: 0; }
+
+.splash {
+  width: 100%;
+  height: 450px;
+  display: flex; }
+  .splash .section {
+    height: 100%; }
+    .splash .section h2 {
+      color: #00613f; }
+    .splash .section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .splash .section:last-child {
+    flex-basis: 50%; }
+
+#lower-section {
+  height: 500px;
+  background-image: url("../../img/slr-camera-3752509_1920.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem; }
+  #lower-section .section {
+    width: 20%;
+    flex-grow: 1;
+    height: 80%; }
+  #lower-section div {
+    border-radius: 5px;
+    opacity: 0.9; }
+
+.green {
+  background-color: #00613f;
+  color: white; }
+  .green h3 {
+    color: white; }

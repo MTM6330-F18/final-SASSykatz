@@ -12999,7 +12999,9 @@ a.text-dark:hover, a.text-dark:focus {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%; }
     .banner .logo img {
       object-fit: contain; }
   .banner h1 {
@@ -13029,3 +13031,7 @@ li:nth-child(1) {
 
 a {
   text-align: center; }
+
+@media only screen and (min-width: 768px) {
+  nav li:nth-child(1) {
+    margin-left: 7rem; } }

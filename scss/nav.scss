@@ -20,6 +20,8 @@ $navbar-dark-active-color: $gray;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
+        padding-left: 10%;
 
         img {
             object-fit: contain;
@@ -69,4 +71,12 @@ li:nth-child(1) {
 
 a {
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        li:nth-child(1) {
+            margin-left: 7rem;
+        }
+    }
 }

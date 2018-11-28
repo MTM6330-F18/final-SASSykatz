@@ -1,25 +1,30 @@
 @import 'main';
 
 body {
-background-color: $bg;
-font-family: 'Gotham-Medium', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+header{
+    padding-top: 8rem;
+}
 .page{
     width: 80%;
     height: 1000px;
     background-color: $body;
     margin: 0 auto;
-
-.teacher-container{
+h1{
+    padding-top: 1rem;
+    text-align: center;
+}
+.selector-container{
     width: auto;
     height: auto;
     max-width: 1050px;
     background-color: $dark-gray;
     border-radius: 10px;
+    margin: 0 auto;
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 padding-left: 3rem;
-    .teacher {
+    .selector-item {
         margin-left: -35px;
         width: 200px;
         height: 200px;
@@ -56,15 +61,15 @@ padding-left: 3rem;
             color: #fff;
             text-align: center;
            opacity: 0;
-           margin-left: 45px;
-           margin-top: 75px;
+           margin-left: 20%;
+           margin-top: 40%;
            transition: 0.8s ease-out;
            cursor: pointer;
         }
         img{
             position: absolute;
             top: 0;
-            lert: 0;
+            left: 0;
             width: 200px;
             height: 200px;
             filter: contrast(1.2) brightness(0.7) grayscale(100%);
@@ -73,7 +78,7 @@ padding-left: 3rem;
         }
         
 }
-.teacher:hover {
+.selector-item:hover {
     p, .fas{
     opacity: 1;
     transition: 0.2s ease-in;
@@ -82,7 +87,7 @@ padding-left: 3rem;
     mix-blend-mode: normal;
     filter: contrast(1) brightness(1) grayscale(0%);
     transform: scale(1.02);
-    transition: 0.5s ease-in;
+    transition: 0.2s ease-in;
   cursor:pointer;
 }
 }

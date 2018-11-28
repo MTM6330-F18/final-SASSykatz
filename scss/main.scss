@@ -33,6 +33,15 @@ $font-family-sans-serif: 'Gotham-Medium', 'Segoe UI', Tahoma, Geneva, Verdana, s
 body{
     font-family: $font-family-sans-serif;
     background-color: $bg;
+    .page{
+        width: 100%;
+        height: 1000px;
+        background-color: $body;
+        margin: 0 auto;
+        @media only screen and (min-width: 768px) {
+            width: 80%;
+        }
+    }
 h1{
     font-size: 2.1rem;
     font-weight: 600;

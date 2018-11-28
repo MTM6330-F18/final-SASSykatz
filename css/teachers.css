@@ -348,7 +348,8 @@ h4 {
   font-family: 'Gotham Medium'; }
 
 .section {
-  padding: 2rem; }
+  padding: 2rem;
+  width: 100%; }
 
 .full-size {
   padding: 0; }

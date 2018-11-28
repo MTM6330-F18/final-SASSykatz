@@ -23,11 +23,11 @@ h1{
     background-color: $dark-gray;
     border-radius: 10px;
     margin: 0 auto;
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-padding-left: 3rem;
-margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
     .selector-item {
         margin-left: -35px;
         width: 200px;

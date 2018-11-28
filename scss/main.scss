@@ -7,7 +7,7 @@
 $ac-green: hsl(159, 100%, 19%);
 $ac-light: hsl(160, 24%, 52%);
 $ac-dark: hsl(167, 100%, 10%);
-$new-green:hsl(109, 61%, 43%);
+$new-green: hsl(109, 61%, 43%);
 $charcoal: hsl(120, 8%, 14%);
 $gray: hsl(120, 1%, 57%);
 $dark-gray: hsl(120, 6%, 21%);
@@ -25,15 +25,10 @@ $success: $new-green;
 // $danger: $red !default;
 $light: $ac-light;
 $dark: $charcoal;
-$font-family-sans-serif: 'Gotham-Medium',
-'Segoe UI',
-Tahoma,
-Geneva,
-Verdana,
-sans-serif;
+$font-family-sans-serif: 'Gotham-Medium', 'Segoe UI', Tahoma, Geneva, Verdana,
+  sans-serif;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
-
 
 body {
   font-family: $font-family-sans-serif;
@@ -61,5 +56,4 @@ body {
     margin: 0 auto;
     padding: 1rem;
   }
-
 }

@@ -1,0 +1,18 @@
+.page .sub-title {
+  width: 100%;
+  margin: 0 auto; }
+  .page .sub-title h2 {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0; }
+
+.page .info-container .info-body .info {
+  margin: 0; }
+  @media only screen and (min-width: 768px) {
+    .page .info-container .info-body .info {
+      justify-content: space-evenly; } }
+  .page .info-container .info-body .info .profile h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+  .page .info-container .info-body .info .profile h3 {
+    font-style: normal; }

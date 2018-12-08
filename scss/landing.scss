@@ -1,0 +1,92 @@
+@import 'main';
+@import 'nav';
+.page{
+body {
+  background-color: $bg;
+}
+
+p,
+a {
+  font-family: 'Gotham Book';
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+strong {
+  font-weight: 800;
+}
+
+h1 {
+  font-family: 'Gotham Bold';
+  font-weight: 1200;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Gotham Bold';
+}
+}
+
+.section {
+  padding: 2rem;
+  width: 100%;
+}
+
+.full-size {
+  padding: 0;
+}
+
+.splash {
+  width: 100%;
+  height: 450px;
+  display: flex;
+
+  .section {
+    height: 100%;
+
+    h2 {
+      color: $ac-green;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .section:last-child {
+    flex-basis: 50%;
+  }
+}
+
+#lower-section {
+  height: 500px;
+  background-image: url("../../img/slr-camera-3752509_1920.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+
+  .section {
+    width: 20%;
+    flex-grow: 1;
+    height: 80%;
+  }
+
+  div {
+    border-radius: 5px;
+    opacity: 0.9;
+  }
+}
+
+.green {
+  background-color: $ac-green;
+  color: white;
+
+  h3 {
+    color: white;
+  }
+}

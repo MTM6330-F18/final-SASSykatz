@@ -1,0 +1,183 @@
+@import 'main';
+
+body {
+    h1 {
+      padding-top: 1rem;
+      text-align: center;
+    }
+    .selector-container {
+      width: auto;
+      height: auto;
+      max-width: 1050px;
+      background-color: $dark-gray;
+      border-radius: 10px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding-left: 3rem;
+      margin-bottom: 2rem;
+      .selector-item {
+        margin-left: -35px;
+        width: 200px;
+        height: 200px;
+        background-color: $ac-green;
+        position: relative;
+        -webkit-clip-path: polygon(16% 0, 98% 0, 84% 100%, 2% 100%);
+        clip-path: polygon(16% 0, 98% 0, 84% 100%, 2% 100%);
+        display: flex;
+        .fas {
+          z-index: 1;
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          opacity: 0;
+          transition: 0.8s ease-out;
+        }
+        .icon1 {
+          color: rgb(255, 255, 255);
+        }
+        .icon2 {
+          color: rgb(255, 217, 0);
+        }
+        .icon3 {
+          color: rgb(0, 81, 173);
+        }
+        .icon4 {
+          color: rgb(255, 255, 255);
+        }
+        .icon5 {
+          color: rgb(255, 117, 244);
+        }
+        p {
+          z-index: 1;
+          color: #fff;
+          text-align: center;
+          opacity: 0;
+          margin-left: 20%;
+          margin-top: 40%;
+          transition: 0.8s ease-out;
+          cursor: pointer;
+        }
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 200px;
+          height: 200px;
+          filter: contrast(1.2) brightness(0.7) grayscale(100%);
+          mix-blend-mode: soft-light;
+          transition: 0.8s ease-out;
+        }
+      }
+      .active, .selector-item:hover {
+        p,
+        .fas {
+          opacity: 1;
+          transition: 0.2s ease-in;
+        }
+        img {
+          mix-blend-mode: normal;
+          filter: contrast(1) brightness(1) grayscale(0%);
+          transform: scale(1.02);
+          transition: 0.2s ease-in;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+.info-container {
+  border-radius: 10px;
+    margin-top: 2rem;
+    background-color: $charcoal;
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .info-body {
+    background-color: $bg;
+    border-radius: 10px;
+    border-top: $ac-green 10px solid;
+    border-left: none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 93% , 0% 100%);
+    @media only screen and (min-width: 768px) {
+      border-left: $ac-green 10px solid;
+      border-top:none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+    }
+    .info {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+     align-items: center;
+      flex-direction: column;
+      @media only screen and (min-width: 768px) {
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+      }
+      img {
+        margin: 2rem;
+        box-shadow: 0 0 0 10px $ac-light, 0 0 0 15px rgba($ac-light, 0.3),
+          0 0 0 20px rgba($ac-light, 0.3);
+      }
+      .body {
+        padding: 1rem;
+        width: 100%;
+        @media only screen and (min-width: 768px) {
+        margin: 2rem;
+        width: 50%;
+        padding: 0rem;
+        }
+      }
+      .line {
+        width: 3px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: $ac-light;
+        transform: rotate(7deg);
+        display: none;
+        @media only screen and (min-width: 768px) {
+          margin: 2rem 0 2rem 0;
+          display:block;
+        }
+      }
+      .profile {
+        margin: 2rem;
+        
+        h2 {
+          font-size: 1.1rem;
+          font-weight: bold;
+          line-height: 0.2rem;
+        }
+        h3 {
+          font-size: 0.9rem;
+          font-style: italic;
+          font-weight: 600;
+        }
+        li{
+          list-style: none;
+        }
+      }
+    }
+    .facts {
+      margin: 2rem;
+    }
+    ul {
+      list-style-image: url('../../img/li-marker.png') !important;
+      padding-bottom: 5rem;
+      @media only screen and (min-width: 768px) {
+      padding-bottom: 2rem;
+      }
+    }
+  }
+}

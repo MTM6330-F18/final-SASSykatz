@@ -312,7 +312,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -6982,7 +6982,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -19703,29 +19703,33 @@ li:nth-child(1) {
 a {
   text-align: center; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   nav li:nth-child(1) {
     margin-left: 7rem; } }
 
-body {
+@media only screen and (min-width: 1000px) and (min-width: 1200px) {
+  nav li:nth-child(1) {
+    margin-left: 11rem; } }
+
+.page body {
   background-color: #f7f8f7; }
 
-p,
-a {
+.page p,
+.page a {
   font-family: 'Gotham Book';
   font-size: 1rem;
   font-weight: 100; }
 
-strong {
+.page strong {
   font-weight: 800; }
 
-h1 {
+.page h1 {
   font-family: 'Gotham Bold';
   font-weight: 1200; }
 
-h2,
-h3,
-h4 {
+.page h2,
+.page h3,
+.page h4 {
   font-family: 'Gotham Bold'; }
 
 .section {

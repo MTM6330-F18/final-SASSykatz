@@ -311,7 +311,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -6668,3 +6668,48 @@ body {
     width: 30%;
     margin: 0 auto;
     padding: 1rem; }
+
+.page main {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  background-size: cover;
+  background-image: url("../../img/career-img/career-banner.jpg");
+  background-position: center; }
+  @media only screen and (min-width: 768px) {
+    .page main {
+      background-position-y: -50px;
+      height: 500px; } }
+
+.page .green h2 {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 1rem; }
+
+@media only screen and (min-width: 768px) {
+  .page .green p, .page .green ol {
+    margin-left: 10rem;
+    margin-right: 10rem; } }
+
+.page .green ol li {
+  margin-bottom: 1rem; }
+
+.page .splash2 {
+  background-color: #00613f; }
+  .page .splash2 .section2 {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    background-size: cover;
+    background-image: url("../../img/career-img/studio.jpg");
+    background-position: center;
+    mix-blend-mode: normal;
+    filter: contrast(1.2) brightness(0.7) grayscale(100%);
+    mix-blend-mode: soft-light; }
+    @media only screen and (min-width: 768px) {
+      .page .splash2 .section2 {
+        background-position-y: -50px;
+        height: 500px; } }

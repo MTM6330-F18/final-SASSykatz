@@ -6669,7 +6669,60 @@ body {
     margin: 0 auto;
     padding: 1rem; }
 
+main {
+  padding: 1rem; }
+
 .full-span {
   background-color: #00613f;
+  background-image: url("../../img/camera-gear.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
   width: 100%;
   height: 350px; }
+  .full-span #resourcesH1 {
+    color: white;
+    text-align: center;
+    line-height: 350px;
+    text-transform: uppercase; }
+
+h2 {
+  text-align: center; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 500px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-auto-rows: 300px; } }
+  .grid .item {
+    position: relative;
+    border: 1px solid #212721; }
+    .grid .item:hover .description {
+      visibility: visible;
+      opacity: 0.8;
+      width: 80%; }
+    .grid .item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1; }
+    .grid .item .description {
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background-color: #323932;
+      width: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.4s; }
+  .grid .wide {
+    grid-column: span 2;
+    grid-auto-flow: dense; }
+  .grid .tall {
+    grid-row: span 2;
+    grid-auto-flow: dense; }

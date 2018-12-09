@@ -6699,7 +6699,10 @@ h2 {
       grid-auto-rows: 300px; } }
   .grid .item {
     position: relative;
-    border: 1px solid #212721; }
+    border: 1px solid #212721;
+    overflow: hidden; }
+    .grid .item:hover img {
+      transform: scale(1.1); }
     .grid .item:hover .description {
       visibility: visible;
       opacity: 0.8;
@@ -6708,7 +6711,8 @@ h2 {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      z-index: -1; }
+      z-index: -1;
+      transition: 0.6s; }
     .grid .item .description {
       color: white;
       position: absolute;

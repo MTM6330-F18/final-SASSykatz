@@ -6675,6 +6675,8 @@ body {
   height: 200px;
   padding: 0;
   background-size: cover;
+  mix-blend-mode: soft-light;
+  filter: contrast(1.2) brightness(0.7) grayscale(100%);
   background-image: url("../../img/career-img/career-banner.jpg");
   background-position: center; }
   @media only screen and (min-width: 768px) {
@@ -6682,18 +6684,18 @@ body {
       background-position-y: -50px;
       height: 500px; } }
 
-.page .green h2 {
+.page .green h1, .page .gray h1 {
   text-align: center;
   margin: 0 auto;
   width: 100%;
   margin-bottom: 1rem; }
 
 @media only screen and (min-width: 768px) {
-  .page .green p, .page .green ol {
+  .page .green p, .page .green ol, .page .gray p, .page .gray ol {
     margin-left: 10rem;
     margin-right: 10rem; } }
 
-.page .green ol li {
+.page .green ol li, .page .gray ol li {
   margin-bottom: 1rem; }
 
 .page .splash2 {
@@ -6706,7 +6708,6 @@ body {
     background-size: cover;
     background-image: url("../../img/career-img/studio.jpg");
     background-position: center;
-    mix-blend-mode: normal;
     filter: contrast(1.2) brightness(0.7) grayscale(100%);
     mix-blend-mode: soft-light; }
     @media only screen and (min-width: 768px) {

@@ -1,0 +1,43 @@
+
+Stephen Gagne 	- JavaScript 
+		- SASS
+		- HTML 
+		- CSS
+		- Professor interviews 
+		- Competition research 
+		- Persona research and creation 
+
+
+Alexander Braun - HTML 
+		- CSS 
+		- UX Design 
+		- Bootstrap 
+		- Competition research 
+		- Persona research and creation 
+
+
+Ashley Gorman 	- UX Design 
+		- Professor interviews 
+		- Testimonial collection
+		- Content aggregation 
+		- Competition research
+		- Persona research and creation  
+
+
+Shawn Pepin     - UX Design 
+		- HTML 
+		- CSS 
+		- Professor interviews 
+		- Quality assurance 
+		- Competition research
+		- Persona research and creation  
+
+
+Daniel Katz (Lead) 
+		- HTML
+		- Professor interviews 
+		- Quality assurance 
+		- UX Design 
+		- Content aggregation 
+		- Competition research 
+		- Persona research and creation 

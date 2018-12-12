@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .splash2 {
   background-color: $ac-green;
 }
@@ -18,29 +19,48 @@
   }
 }
 
+=======
+>>>>>>> master
 .page {
   .sub-title {
     width: 100%;
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     h2 {
       max-width: 1050px;
       margin: 0 auto;
       padding: 1rem 0 1rem 0;
     }
   }
+<<<<<<< HEAD
 
   .info-container {
+=======
+
+  .info-container {
+    transition: 0.4s;
+
+>>>>>>> master
     .info-body {
       .info {
         margin: 0;
+
         @media only screen and (min-width: 768px) {
           justify-content: space-evenly;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
         .profile {
           h2 {
             font-size: 1.5rem;
             line-height: 1.5rem;
           }
+
           h3 {
             font-style: normal;
           }
@@ -48,4 +68,30 @@
       }
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  animation: slide-in 0.4s forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    display: flex;
+  }
+
+  1% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+>>>>>>> master

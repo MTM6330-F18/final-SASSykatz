@@ -6,7 +6,6 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url(../../fonts/fonts.css);
-@import url(../../fonts/fonts.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -6662,14 +6661,20 @@ body {
       body .page {
         width: 80%; } }
   body h1 {
-    font-size: 2.1rem;
+    font-size: 1rem;
     font-weight: 600; }
+    @media only screen and (min-width: 768px) {
+      body h1 {
+        font-size: 2.1rem; }
+        body h1 p {
+          font-size: .667rem; } }
   body hr {
     border-width: 3px;
     width: 30%;
     margin: 0 auto;
     padding: 1rem; }
 
+<<<<<<< HEAD
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -19711,6 +19716,8 @@ a {
   nav li:nth-child(1) {
     margin-left: 11rem; } }
 
+=======
+>>>>>>> master
 h1 {
   text-align: center;
   text-transform: uppercase;

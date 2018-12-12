@@ -1,5 +1,4 @@
 @import 'main';
-@import 'nav';
 
 h1 {
   text-align: center;
@@ -7,7 +6,9 @@ h1 {
   font-family: 'Gotham Medium';
   margin-bottom: 1rem;
   padding: 1rem;
+
 }
+
 
 main {
   background-color: $ac-green;

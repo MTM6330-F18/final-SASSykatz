@@ -29,7 +29,6 @@ $navbar-dark-active-color: $gray;
   }
 
   h1 {
-    font-size: 40px;
     line-height: 120px;
     flex-basis: 50%;
     color: $ac-green;
@@ -68,6 +67,71 @@ li:nth-child(1) {
 
 a {
   text-align: center;
+}
+
+// footer
+footer{
+  background-color: $charcoal;
+  color: $bg;
+  width: 100%;
+  .all-info{
+    border-top: 3px $ac-green solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    flex-wrap: wrap;
+    @media only screen and (min-width: 1000px) {
+    flex-wrap: nowrap;
+    justify-content: left;
+    flex-direction: row;
+      }
+    @media only screen and (min-width: 1000px) {
+      justify-content: space-between;
+   }
+  }
+  .info{
+    width: 100%;
+    margin: 0 auto;
+    p{
+      margin: 0;
+    }
+  }
+  .social{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    @media only screen and (min-width: 1000px) {
+    justify-content: right;
+    flex-direction: row-reverse;
+     }
+      a{
+        color: $gray;
+        font-size: 3rem;
+        text-decoration: none;
+        transition: 0.5s;
+        padding: 0.5rem;
+      }
+      a:hover{
+        color: $ac-green;
+      }
+      
+  }
+  .copyright{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    background-color: $ac-green;
+    padding: 0.5rem;
+    width: 100%;
+    p{
+      margin: 0;
+    }
+  }
 }
 
 @media only screen and (min-width: 1000px) {

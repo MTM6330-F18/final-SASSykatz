@@ -9,10 +9,14 @@ $navbar-dark-active-color: $gray;
 
 .banner {
   width: 100%;
-  height: 120px;
+ 
   display: flex;
-  justify-content: space-between;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  @media only screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
   .logo {
     margin-top: 10px;
     height: 100px;
@@ -29,10 +33,19 @@ $navbar-dark-active-color: $gray;
   }
 
   h1 {
-    line-height: 120px;
-    flex-basis: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
     color: $ac-green;
+    @media only screen and (min-width: 600px) {
+      font-size: 1.3rem;
+    }
+    @media only screen and (min-width: 1000px) {
+      line-height: 120px;
+      flex-basis: 50%;
+      font-size: 2.1rem;
+      }
   }
+
 }
 
 nav {
@@ -98,6 +111,7 @@ footer{
       margin: 0;
     }
   }
+  //social icons
   .social{
     justify-content: center;
     align-items: center;
@@ -133,7 +147,6 @@ footer{
     }
   }
 }
-
 @media only screen and (min-width: 1000px) {
   nav {
     li:nth-child(1) {

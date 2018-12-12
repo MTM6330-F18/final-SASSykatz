@@ -13010,7 +13010,6 @@ a.text-dark:hover, a.text-dark:focus {
     .banner .logo img {
       object-fit: contain; }
   .banner h1 {
-    font-size: 40px;
     line-height: 120px;
     flex-basis: 50%;
     color: #00613f; }

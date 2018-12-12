@@ -6672,6 +6672,14 @@ body {
     margin: 0 auto;
     padding: 1rem; }
 
+.page {
+  padding: 1rem; }
+
+.top {
+  padding: 0 1rem; }
+  .top p {
+    font-size: 1.5rem; }
+
 h1 {
   text-align: center;
   text-transform: uppercase;

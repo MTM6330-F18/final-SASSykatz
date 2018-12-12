@@ -1,8 +1,6 @@
 @import 'main';
-.page{
-
-
-main{
+.page {
+  main {
     margin: 0;
     width: 100%;
     height: 200px;
@@ -10,48 +8,48 @@ main{
     background-size: cover;
     mix-blend-mode: soft-light;
     filter: contrast(1.2) brightness(0.7) grayscale(100%);
-    background-image: url("../../img/career-img/career-banner.jpg");
+    background-image: url('../../img/career-img/career-banner.jpg');
     background-position: center;
     @media only screen and (min-width: 768px) {
-        background-position-y:  -50px;
-        height: 501px;
-      }
-   
-   
-}
-.green, .gray{
-    h1{
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        margin-bottom: 1rem;
+      background-position-y: -50px;
+      height: 501px;
     }
-    p, ol{
-        @media only screen and (min-width: 768px) {
+  }
+  .green,
+  .gray {
+    h1 {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    p,
+    ol {
+      @media only screen and (min-width: 768px) {
         margin-left: 10rem;
         margin-right: 10rem;
-       }
-    }
-    ol li{
-        margin-bottom: 1rem;
-    }
-}
-.splash2{
-    background-color: $ac-green;
-.section2{
-    margin: 0;
-    width: 100%;
-    height: 200px;
-    padding: 0;
-    background-size: cover;
-    background-image: url("../../img/career-img/studio.jpg");
-    background-position: center;
-    filter: contrast(1.2) brightness(0.7) grayscale(100%);
-          mix-blend-mode: soft-light;
-    @media only screen and (min-width: 768px) {
-        background-position-y:  -50px;
-        height: 500px;
       }
     }
-}
+    ol li {
+      margin-bottom: 1rem;
+    }
+  }
+  .splash2 {
+    background-color: $ac-green;
+    // .section2{
+    //     margin: 0;
+    //     width: 100%;
+    //     height: 200px;
+    //     padding: 0;
+    //     background-size: cover;
+    //     background-image: url("../../img/career-img/studio.jpg");
+    //     background-position: center;
+    //     filter: contrast(1.2) brightness(0.7) grayscale(100%);
+    //           mix-blend-mode: soft-light;
+    //     @media only screen and (min-width: 768px) {
+    //         background-position-y:  -50px;
+    //         height: 500px;
+    //       }
+    //     }
+  }
 }

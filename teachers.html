@@ -12,84 +12,83 @@
     <link rel="stylesheet" href="css/min/main.css">
     <link rel="stylesheet" href="css/min/teachers.css">
     <link rel="stylesheet" href="css/min/nav.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
     <title>Teachers</title>
 </head>
 
 <body>
     <header>
-            <div class="banner">
-                    <div class="logo">
-                      <a href="index.html"
-                        ><img
-                          src="./img/AC_WORDMARK_FC_GRN.png"
-                          alt="algonquin college logo"
-                      /></a>
-                    </div>
-                    <h1>INTERACTIVE MEDIA DESIGN</h1>
-                  </div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Overview<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                             <a class="nav-link" href="courses.html">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                             <a class="nav-link" href="application.html">How to Apply</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="careerPathways.html">Career Pathways</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="fees.html">Tuition & Fees</a>
-                        </li>
-                        <li class="nav-item active active">
-                            <a class="nav-link" href="teachers.html">Faculty</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="equipment.html">Equipment</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
+        <div class="banner">
+            <div class="logo">
+                <a href="index.html"><img src="./img/AC_WORDMARK_FC_GRN.png" alt="algonquin college logo" /></a>
+            </div>
+            <h1>INTERACTIVE MEDIA DESIGN</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Overview<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="application.html">How to Apply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careerPathways.html">Career Pathways</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fees.html">Tuition & Fees</a>
+                    </li>
+                    <li class="nav-item active active">
+                        <a class="nav-link" href="teachers.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.html">Equipment</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div class="page">
 
         <h1 class="title">Instructors</h1>
         <hr>
         <div class="selector-container">
-            <div class="selector-item active">
+            <div class="selector-item active" data-course="michel">
                 <i class="icon1 fas fa-pen-nib"></i>
                 <p class="name">[ Michel Lacroix ]</p>
                 <img src="./img/michel-lorix.png" alt="Michel Lacroix">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="andrew">
                 <i class="icon2 fas fa-circle"></i>
                 <p class="name">[ Andrew Balfour ]</p>
                 <img src="./img/andrew-balfour.jpg" alt="Andrew Balfour">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="amel">
                 <i class="icon3 fas fa-globe-asia"></i>
                 <p class="name">[ Amel Dedic ]</p>
                 <img src="./img/amel-dedic.jpg" alt="Amel Dedic">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="hussein">
                 <i class="icon4 fas fa-backward"></i>
                 <p class="name">[ Hussein Tayrani ]</p>
                 <img src="./img/hussein-tayrani.jpg" alt="Hussein Tayrani">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="robert">
                 <i class="icon5 fas fa-desktop"></i>
                 <p class="name">[ Robert McKenney ]</p>
                 <img src="./img/robert-mckenney.jpg" alt="Robert Mckenney">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="michael">
                 <i class="icon6 fas fa-server"></i>
                 <p class="name">[ Michael Eisenbraun ]</p>
                 <img src="./img/michael-eisen-braun.jpg" alt="Michael Eisenbraun">
@@ -99,35 +98,45 @@
 
         <hr>
         </hr>
-        <div class="info-container">
+        <div class="info-container" data-course="michel">
             <div class="info-body">
-                    <div class="profile">
-                            <div class="top">
-                                <div class="info">
-                                    <img src="./img/michel-lorix.png" alt="Michel Lacroix">
-                                    <div class="profile active">
-                                        <h2>Digital Graphics</h2>
-                                        <h3>Michel Lacroix</h3>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="body">
-                                        <p>This course is about learning Photoshop, Illustrator, printed and web graphics. You will have 4 hours in class per week and should dedicate an additional 2-4 hours per week for homework and practice. There is no prior knowledge needed for this course. Equipment needed for this class would be a good computer and a computer mouse, having a drawing tablet is an asset, but not necessary. <br>
-                                            This course will allow you can master two leading software in the industry, being creative and learning the field itself.                                    
-                                        </p>
-                                    </div>
-                                </div>
+                <div class="profile">
+                    <div class="top">
+                        <div class="info">
+                            <img src="./img/michel-lorix.png" alt="Michel Lacroix">
+                            <div class="profile active">
+                                <h2>Digital Graphics</h2>
+                                <h3>Michel Lacroix</h3>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </div>
-                            <div class="facts">
-                                <ul>
-                                    <li>I like being creative, I’m an artist that can share my art, I like seeing student’s art advance in the program.</li>
-                                    <li>I’ve taken a design course in Vancouver as well as a 2 year multi-media program.</li>
-                                    <li>I own a media arts studio and do freelance work. </li>
-                                </ul>
+                            <div class="line"></div>
+                            <div class="body">
+                                <p>This course is about learning Photoshop, Illustrator, printed and web graphics. You
+                                    will have 4 hours in class per week and should dedicate an additional 2-4 hours per
+                                    week for homework and practice. There is no prior knowledge needed for this course.
+                                    Equipment needed for this class would be a good computer and a computer mouse,
+                                    having a drawing tablet is an asset, but not necessary. <br>
+                                    This course will allow you can master two leading software in the industry, being
+                                    creative and learning the field itself.
+                                </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="facts">
+                        <ul>
+                            <li>I like being creative, I’m an artist that can share my art, I like seeing student’s art
+                                advance in the program.</li>
+                            <li>I’ve taken a design course in Vancouver as well as a 2 year multi-media program.</li>
+                            <li>I own a media arts studio and do freelance work. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container hidden" data-course="andrew">
+            <div class="info-body">
                 <div class="profile">
                     <div class="top">
                         <div class="info">
@@ -141,8 +150,18 @@
                             </div>
                             <div class="line"></div>
                             <div class="body">
-                                <p>This course is about visual communications. You will have 3 hours in class per week with an additional hour of hybrid/online learning plus some homework time. There is no prior knowledge of a camera or photography needed before taking this class, everything will be taught to you in class. For this class, you will need one of the latest Canon EOS DSLR Camera with at least 1 zoom lens – typically 18-55mm. We will also be using a tripod as well as 5in1 reflectors. Students will be able to borrow some gear from the school if needed.<br> 
-                                    The world is less about words and more about pictures in the 21st Century. It will be hard to find work unless you are visually literate. Skills learned in this class will help you greatly in the Video and Motion Graphics courses later in the Program. Storytelling and Visual Literacy will be the foundation of everything you do in your career. 
+                                <p>This course is about visual communications. You will have 3 hours in class per week
+                                    with an additional hour of hybrid/online learning plus some homework time. There is
+                                    no prior knowledge of a camera or photography needed before taking this class,
+                                    everything will be taught to you in class. For this class, you will need one of the
+                                    latest Canon EOS DSLR Camera with at least 1 zoom lens – typically 18-55mm. We will
+                                    also be using a tripod as well as 5in1 reflectors. Students will be able to borrow
+                                    some gear from the school if needed.<br>
+                                    The world is less about words and more about pictures in the 21st Century. It will
+                                    be hard to find work unless you are visually literate. Skills learned in this class
+                                    will help you greatly in the Video and Motion Graphics courses later in the
+                                    Program. Storytelling and Visual Literacy will be the foundation of everything you
+                                    do in your career.
                                 </p>
                             </div>
                         </div>
@@ -150,18 +169,22 @@
                     <div class="facts">
                         <ul>
                             <li>I love teaching people how to use photography to express their ideas</li>
-                            <li>I started working as a photographer at age 20, right after graduation from the Algonquin Photography Program.</li>
+                            <li>I started working as a photographer at age 20, right after graduation from the
+                                Algonquin Photography Program.</li>
                             <li>I’ve worked at Studios in Ottawa & California & have had my own business since 1990.</li>
                         </ul>
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <div class="info-container hidden" data-course="amel">
+            <div class="info-body">
                 <div class="profile">
                     <div class="top">
                         <div class="info">
                             <img src="./img/amel-dedic.jpg" alt="Amel Dedic">
                             <div class="profile hide">
-                                <h2>Responsive Web Design</h2>
+                                <h2>Responsive <br>Web Design</h2>
                                 <h3>Amel Dedic</h3>
                                 <li></li>
                                 <li></li>
@@ -169,25 +192,34 @@
                             </div>
                             <div class="line"></div>
                             <div class="body">
-                                <p>This course is about building responsive web pages. It’s an introductory course for all of the coding courses that follow. You will have 4 hours in class per week and should dedicate an additional 2-4 hours per week for homework and practice. For this class you will need a laptop and a subscription to Pluralsight (school will provide access to this subscription) <br>
-                                    This class will give you hands on experience in coding web pages, with lots of demo examples for every topic covered.
+                                <p>This course is about building responsive web pages. It’s an introductory course for
+                                    all of the coding courses that follow. You will have 4 hours in class per week and
+                                    should dedicate an additional 2-4 hours per week for homework and practice. For
+                                    this class you will need a laptop and a subscription to Pluralsight (school will
+                                    provide access to this subscription) <br>
+                                    This class will give you hands on experience in coding web pages, with lots of demo
+                                    examples for every topic covered.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="facts">
                         <ul>
-                            <li>I like the chance to exchange in-class experiences with students. Especially when a student is really interested and engaged.</li>
+                            <li>I like the chance to exchange in-class experiences with students. Especially when a
+                                student is really interested and engaged.</li>
                             <li>I love to experiment so I take on projects to learn new things.</li>
                             <li>I occasionally contract as a freelancer.</li>
                         </ul>
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <div class="info-container hidden" data-course="hussein">
+            <div class="info-body">
                 <div class="profile hide">
                     <div class="top">
                         <div class="info">
-                                <img src="./img/hussein-tayrani.jpg" alt="Hussein Tayrani">
+                            <img src="./img/hussein-tayrani.jpg" alt="Hussein Tayrani">
                             <div class="profile hide">
                                 <h2>Motion Graphics</h2>
                                 <h3>Hussein Tayrani</h3>
@@ -197,27 +229,42 @@
                             </div>
                             <div class="line"></div>
                             <div class="body">
-                                <p>This course is about working with After Effects and motion design. You will have 3 hours in class per week and should do an additional 3 outside of class. Prior to taking this class you should know computer management, how to organize files as well as know your operating system and a little about Adobe. Equipment needed for this class would be a simple computer mouse, a good computer with a good graphics card. <br>
-                                    Digital signage and motion design is booming right now, there is now a calorie count law and any
-                                    restaurant that has +20 locations, must have digital signage, digital menus all have animation,
-                                    limited time deals and menus now bilingual. Business need to be out there, online, website videos, showing their services, etc.                                    
+                                <p>This course is about working with After Effects and motion design. You will have 3
+                                    hours in class per week and should do an additional 3 outside of class. Prior to
+                                    taking this class you should know computer management, how to organize files as
+                                    well as know your operating system and a little about Adobe. Equipment needed for
+                                    this class would be a simple computer mouse, a good computer with a good graphics
+                                    card. <br>
+                                    Digital signage and motion design is booming right now, there is now a calorie
+                                    count law and any
+                                    restaurant that has +20 locations, must have digital signage, digital menus all
+                                    have animation,
+                                    limited time deals and menus now bilingual. Business need to be out there, online,
+                                    website videos, showing their services, etc.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="facts">
                         <ul>
-                            <li>What I like the most about this course is the creativity, sharing my ideas, making them happen, lots of imagination.</li>
-                            <li>I’ve been doing  graphic and motion design for 14-15 years now.</li>
-                            <li>I work for Wilden Media – digital signage and music throughout North America as well as own my own company for about a year now building websites and doing graphic and motion design.</li>
+                            <li>What I like the most about this course is the creativity, sharing my ideas, making them
+                                happen, lots of imagination.</li>
+                            <li>I’ve been doing graphic and motion design for 14-15 years now.</li>
+                            <li>I work for Wilden Media – digital signage and music throughout North America as well as
+                                own my own company for about a year now building websites and doing graphic and motion
+                                design.</li>
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="info-container hidden" data-course="robert">
+            <div class="info-body">
 
                 <div class="profile">
                     <div class="top">
                         <div class="info">
-                                <img src="./img/robert-mckenney.jpg" alt="Robert Mckenney">
+                            <img src="./img/robert-mckenney.jpg" alt="Robert Mckenney">
                             <div class="profile hide">
                                 <h2>Web Production</h2>
                                 <h3>Robert McKenney</h3>
@@ -227,27 +274,47 @@
                             </div>
                             <div class="line"></div>
                             <div class="body">
-                                <p>In this course there are two broad themes that we explore: practicing agile project management techniques, and learning the tools that professional developers use to automate their daily workflow. You will have 3 hours in class per week and should do an additional 3 outside of class. This course builds on the work done in Responsive Web Design and Client-side Development. We will look at building out some common use-case like navbars and gallery grids with modern CSS features like Flexbox, Grid and Filters. So, brushing up on the basics of HTML/CSS will help. We will also be doing a little bit of JavaScript. A great reference resource would be the website javascript.info  Equipment needed for this class would be a good laptop and a pencil/paper. <br>
-                                    You will get to practice essential skills like estimating work, breaking down requirements into smaller manageable tasks, and effectively collaborating on projects. You will also become more comfortable with standard tools like Git for source code version control and using the command line to install third party libraries.                                    
+                                <p>In this course there are two broad themes that we explore: practicing agile project
+                                    management techniques, and learning the tools that professional developers use to
+                                    automate their daily workflow. You will have 3 hours in class per week and should
+                                    do an additional 3 outside of class. This course builds on the work done in
+                                    Responsive Web Design and Client-side Development. We will look at building out
+                                    some common use-case like navbars and gallery grids with modern CSS features like
+                                    Flexbox, Grid and Filters. So, brushing up on the basics of HTML/CSS will help. We
+                                    will also be doing a little bit of JavaScript. A great reference resource would be
+                                    the website javascript.info Equipment needed for this class would be a good laptop
+                                    and a pencil/paper. <br>
+                                    You will get to practice essential skills like estimating work, breaking down
+                                    requirements into smaller manageable tasks, and effectively collaborating on
+                                    projects. You will also become more comfortable with standard tools like Git for
+                                    source code version control and using the command line to install third party
+                                    libraries.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="facts">
                         <ul>
-                            <li>I get the most enjoyment from sharing the fun of learning some new CSS tricks to solve what used to be cumbersome problems.</li>
-                            <li>I have 30 years of professional experience with IT systems, application development, and product management.</li>
-                            <li>I have most recently been the Founder and CEO of a local SaaS startup, and am currently working on some freelance projects.</li>
+                            <li>I get the most enjoyment from sharing the fun of learning some new CSS tricks to solve
+                                what used to be cumbersome problems.</li>
+                            <li>I have 30 years of professional experience with IT systems, application development,
+                                and product management.</li>
+                            <li>I have most recently been the Founder and CEO of a local SaaS startup, and am currently
+                                working on some freelance projects.</li>
                         </ul>
                     </div>
-                 </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container hidden" data-course="michael">
+            <div class="info-body">
 
-                 <div class="profile">
+                <div class="profile">
                     <div class="top">
                         <div class="info">
-                                <img src="./img/michael-eisen-braun.jpg" alt="Michael Eisenbraun">
+                            <img src="./img/michael-eisen-braun.jpg" alt="Michael Eisenbraun">
                             <div class="profile hide">
-                                <h2>Server-Side Web Development</h2>
+                                <h2>Server-Side <br> Web Development</h2>
                                 <h3>Michael Eisenbraun</h3>
                                 <li></li>
                                 <li></li>
@@ -255,27 +322,62 @@
                             </div>
                             <div class="line"></div>
                             <div class="body">
-                                <p>Server-Side Web Development is about using PHP and the MySQL database to build dynamic websites. This means that the website changes based on the user’s request or actions as opposed to static websites that don’t. You don’t have to create each static file, a template can do that from the database. You will have 3 hours in class + 1 hour of independent study and at least the same outside of class. Prior to taking this class students should have a good knowledge of HTML and CSS as well as the programming techniques learned in Client-Side Web Development. Equipment needed for this class would be a computer that meets the minimum requirements for the program. They’ll also need a local development environment (ie Local By Flywheel) and a text editor (VS Code). <br>
-                                   PHP is still the most popular server-side language for web development. It is also the language that Wordpress is build on. Wordpress makes up 30% of the web. Knowing how to use a database is crucial for any serious web developer. On top of learning PHP and MySQL , you will gain a greater understanding of what it takes to build real world projects.                                        
+                                <p>Server-Side Web Development is about using PHP and the MySQL database to build
+                                    dynamic websites. This means that the website changes based on the user’s request
+                                    or actions as opposed to static websites that don’t. You don’t have to create each
+                                    static file, a template can do that from the database. You will have 3 hours in
+                                    class + 1 hour of independent study and at least the same outside of class. Prior
+                                    to taking this class students should have a good knowledge of HTML and CSS as well
+                                    as the programming techniques learned in Client-Side Web Development. Equipment
+                                    needed for this class would be a computer that meets the minimum requirements for
+                                    the program. They’ll also need a local development environment (ie Local By
+                                    Flywheel) and a text editor (VS Code). <br>
+                                    PHP is still the most popular server-side language for web development. It is also
+                                    the language that Wordpress is build on. Wordpress makes up 30% of the web. Knowing
+                                    how to use a database is crucial for any serious web developer. On top of learning
+                                    PHP and MySQL , you will gain a greater understanding of what it takes to build
+                                    real world projects.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="facts">
                         <ul>
-                            <li>Because this is the first time students work with the server, we are able to do things that weren’t possible before with only front end. I love databases.</li>
+                            <li>Because this is the first time students work with the server, we are able to do things
+                                that weren’t possible before with only front end. I love databases.</li>
                             <li>I’m self-taught in PHP and MySQL. Using both for more than 10 years.</li>
                             <li>I’m currently only teaching and part-time stay at home dad.</li>
                         </ul>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
 
-    
+    <script src="./scripts/list-handler.js"></script>
 </body>
+<footer>
+    <div class="all-info">
+        <div class="info">
+            <img src="./img/logo-footer.png" alt="algonquin college" width="300px">
+            <p>Ottawa</p>
+            <p>1385 Woodroffe Avenue</p>
+            <p>Ottawa, Ontario K2G 1V8</p>
+            <a>613-727-4723</a>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/algonquincollege/" target="_blank" class="social-icon fab fa-facebook"></a>
+            <a href="https://twitter.com/AlgonquinColleg" target="_blank" class="social-icon fab fa-twitter"></a>
+            <a href="https://ca.linkedin.com/school/algonquincollege/" target="_blank" class="social-icon fab fa-linkedin"></a>
+            <a href="https://www.instagram.com/algonquincollege/" target="_blank" class="social-icon fab fa-instagram"></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>©2018 Algonquin College of Applied Arts and Technology </p>
+    </div>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

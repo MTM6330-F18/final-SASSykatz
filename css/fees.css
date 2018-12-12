@@ -312,7 +312,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -6982,7 +6982,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -19714,7 +19714,7 @@ a {
 h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Gotham Medium";
+  font-family: 'Gotham Medium';
   margin-bottom: 1rem;
   padding: 1rem; }
 
@@ -19727,7 +19727,7 @@ main {
 
 .clearfix::after {
   display: block;
-  content: "";
+  content: '';
   clear: both; }
 
 .featured-image {
@@ -19759,8 +19759,12 @@ main {
 
 .page .main-text p,
 .page .main-text a {
-  font-family: "Gotham Book";
-  font-size: 1.5rem; }
+  font-family: 'Gotham Book';
+  font-size: 1rem; }
+  @media screen and (min-width: 1024px) {
+    .page .main-text p,
+    .page .main-text a {
+      font-size: 1.3rem; } }
 
 hr {
   width: 90% !important;

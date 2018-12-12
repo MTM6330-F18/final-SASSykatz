@@ -6,10 +6,11 @@ for (const selectorContainer of $selectorContainers) {
     for (const selector of $selectors) {
       selector.classList.remove('active')
     }
-    const $infoBoxes = selectorContainer.getElementsByClassName('info-container')
     e.target.closest('.selector-item').classList.add('active')
     const course = e.target.closest('.selector-item').dataset.course
-    for (const box of $infoBoxes) {
+    const $infoBoxes = document.getElementsByClassName('info-container')
+    console.log($infoBoxes)
+    for (let box of $infoBoxes) {
       box.classList.remove('show')
       box.classList.add('hidden')
     }

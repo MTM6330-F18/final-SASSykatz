@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/min/teachers.css">
     <link rel="stylesheet" href="css/min/nav.css">
     <link rel="stylesheet" href="css/min/courses.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <title>Courses</title>
 </head>
 
@@ -64,28 +65,28 @@
         <div class="sub-title">
             <h2>Term 1</h2>
         </div>
-        <div class="selector-container">
-            <div class="selector-item active">
+        <div class="selector-container" id="firstYear">
+            <div class="selector-item active" data-course="digitalGraphics">
                 <i class="icon1 fas fa-pen-nib"></i>
                 <p class="name">[ Digital Graphics ]</p>
                 <img src="./img/courses-img/digital-graphics-1.png" alt="Digital Graphics">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="introDSLR">
                 <i class="icon2 fas fa-circle"></i>
                 <p class="name">[ Introduction to DSLR ]</p>
                 <img src="./img/courses-img/introduction-to-DSLR.png" alt="Introduction to DSLR">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="webDesign">
                 <i class="icon3 fas fa-globe-asia"></i>
                 <p class="name">[ Responsive Web Design ]</p>
                 <img src="./img/courses-img/responsive-web-design.png" alt="Responsive Web Design">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="designThinking">
                 <i class="icon4 fas fa-backward"></i>
                 <p class="name">[ Design Thinking ]</p>
                 <img src="./img/courses-img/design-thinking.png" alt="Design Thinking">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="designFoundations">
                 <i class="icon5 fas fa-desktop"></i>
                 <p class="name">[ Design Foundations ]</p>
                 <img src="./img/courses-img/design-foundations.png" alt="Design Foundations">
@@ -93,242 +94,311 @@
 
         </div>
 
-<hr></hr>
-<div class="info-container">
-    <div class="info-body">
-    <div class="profile">
-        <div class="top">
-            <div class="info">
-               <div class="profile">
-               <h2>Digital Graphics</h2>
-               <li>MTM6160</li>
-               <li>60.0/Hours</li>
-            </div>
-            <div class="line"></div>
-            <div class="body">
-                    <p>The creation of digital art requires an understanding of the modern techniques, tools and file formats the industry uses. By exploring these, students become familiar with the process of planning for and executing digital graphics and design assets. Students also examine best practices for file size and format, optimization, and the development of assets for use both online and in print. 
-                    </p>
+        <hr>
+        </hr>
+        <div id="info-wrapper">
+            <div class="info-container" data-course="digitalGraphics">
+                <div class="info-body">
+                    <div class="profile">
+                        <div class="top">
+                            <div class="info">
+                                <div class="profile">
+                                    <h2>Digital Graphics</h2>
+                                    <li>MTM6160</li>
+                                    <li>60.0/Hours</li>
+                                </div>
+                                <div class="line"></div>
+                                <div class="body">
+                                    <p>The creation of digital art requires an understanding of the modern techniques,
+                                        tools and file formats the industry uses. By exploring these, students become
+                                        familiar with the process of planning for and executing digital graphics and
+                                        design
+                                        assets. Students also examine best practices for file size and format,
+                                        optimization, and the development of assets for use both online and in print.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    </div>
-    </div>
-</div>
-</div>
-<div class="info-container">
-    <div class="info-body">
-    <div class="profile">
-        <div class="top">
-            <div class="info">
-               <div class="profile">
-               <h2>Introduction to DSLR</h2>
-               <li>MTM6100</li>
-               <li>60.0/Hours</li>
+            <div class="info-container hidden" data-course="introDSLR">
+                <div class="info-body">
+                    <div class="profile">
+                        <div class="top">
+                            <div class="info">
+                                <div class="profile">
+                                    <h2>Introduction to DSLR</h2>
+                                    <li>MTM6100</li>
+                                    <li>60.0/Hours</li>
+                                </div>
+                                <div class="line"></div>
+                                <div class="body">
+                                    <p>Students are introduced to DSLR cameras and taken beyond simply pointing and
+                                        clicking. By using manual modes and taking advantage of the many features a
+                                        DSLR
+                                        camera has to offer, students learn the technology, techniques, and theory of
+                                        photography and video through a hands-on approach. By exploring best practices
+                                        during production, students learn to avoid post-production issues.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="body">
-                    <p>Students are introduced to DSLR cameras and taken beyond simply pointing and clicking. By using manual modes and taking advantage of the many features a DSLR camera has to offer, students learn the technology, techniques, and theory of photography and video through a hands-on approach. By exploring best practices during production, students learn to avoid post-production issues. 
-                    </p>
+            <div class="info-container hidden" data-course="webDesign">
+                <div class="info-body">
+                    <div class="profile">
+                        <div class="top">
+                            <div class="info">
+                                <div class="profile">
+                                    <h2>Responsive Web Design</h2>
+                                    <li>MTM6130</li>
+                                    <li>60.0/Hours</li>
+                                </div>
+                                <div class="line"></div>
+                                <div class="body">
+                                    <p>The ubiquity of devices of all shapes and sizes means web content can no longer
+                                        be
+                                        guaranteed to be delivered on a specific platform. Students are introduced to
+                                        responsive web design, using HTML, CSS and modern web standards to build sites
+                                        that
+                                        work on any size device. Students apply current best practices in web design
+                                        and
+                                        coding techniques, including accessibility and search engine optimization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="info-container hidden" data-course="designThinking">
+                <div class="info-body">
+                    <div class="profile">
+                        <div class="top">
+                            <div class="info">
+                                <div class="profile">
+                                    <h2>Design Thinking</h2>
+                                    <li>DSM2100M</li>
+                                    <li>45.0/Hours</li>
+                                </div>
+                                <div class="line"></div>
+                                <div class="body">
+                                    <p>Design Thinking uses a designer mindset to produce business innovations in
+                                        products
+                                        and services, with a focus on deep understanding of and empathy with the people
+                                        who
+                                        use them. Following a holistic innovation process for an area of interest or
+                                        organization, students build an initial business case and apply design thinking
+                                        and
+                                        creative problem-solving strategies to make innovation a sustainable practice.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container hidden" data-course="designFoundations">
+                <div class="info-body">
+                    <div class="profile">
+                        <div class="top">
+                            <div class="info">
+                                <div class="profile">
+                                    <h2>Design Foundations</h2>
+                                    <li>MTM6161</li>
+                                    <li>60.0/Hours</li>
+                                </div>
+                                <div class="line"></div>
+                                <div class="body">
+                                    <p>Through a hands-on approach to design theory, students learn to be objective
+                                        rather
+                                        than subjective about good design. Students are introduced to fundamental
+                                        design
+                                        rules, including principles in layout, typography, colour theory, user
+                                        interfaces
+                                        and interaction design. Modern industry-standard software is used to explore
+                                        different design styles, methodologies and best practices.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-</div>
-</div>
-</div>
-<div class="info-container">
-    <div class="info-body">
-    <div class="profile">
-        <div class="top">
-            <div class="info">
-               <div class="profile">
-               <h2>Responsive Web Design</h2>
-               <li>MTM6130</li>
-               <li>60.0/Hours</li>
-            </div>
-            <div class="line"></div>
-            <div class="body">
-                    <p>The ubiquity of devices of all shapes and sizes means web content can no longer be guaranteed to be delivered on a specific platform. Students are introduced to responsive web design, using HTML, CSS and modern web standards to build sites that work on any size device. Students apply current best practices in web design and coding techniques, including accessibility and search engine optimization.  
-                    </p>
-                </div>
-            </div>
-    </div>
-    </div>
-</div>
-</div>
-
-
-<div class="info-container">
-    <div class="info-body">
-    <div class="profile">
-        <div class="top">
-            <div class="info">
-               <div class="profile">
-               <h2>Design Thinking</h2>
-               <li>DSM2100M</li>
-               <li>45.0/Hours</li>
-            </div>
-            <div class="line"></div>
-            <div class="body">
-                    <p>Design Thinking uses a designer mindset to produce business innovations in products and services, with a focus on deep understanding of and empathy with the people who use them. Following a holistic innovation process for an area of interest or organization, students build an initial business case and apply design thinking and creative problem-solving strategies to make innovation a sustainable practice. 
-                    </p>
-                </div>
-            </div>
-    </div>
-    </div>
-</div>
-</div>
-<div class="info-container">
-    <div class="info-body">
-    <div class="profile">
-        <div class="top">
-            <div class="info">
-               <div class="profile">
-               <h2>Design Foundations</h2>
-               <li>MTM6161</li>
-               <li>60.0/Hours</li>
-            </div>
-            <div class="line"></div>
-            <div class="body">
-                    <p>Through a hands-on approach to design theory, students learn to be objective rather than subjective about good design. Students are introduced to fundamental design rules, including principles in layout, typography, colour theory, user interfaces and interaction design. Modern industry-standard software is used to explore different design styles, methodologies and best practices. 
-                    </p>
-                </div>
-            </div>
-    </div>
-    </div>
-</div>
-</div>
-<!-- ------------------------------------ -->
-<div class="sub-title"><h2>Section 3</h2></div>
+        <!-- ------------------------------------ -->
+        <div class="sub-title">
+            <h2>Section 3</h2>
+        </div>
         <div class="selector-container">
-            <div class="selector-item active">
+            <div class="selector-item active" data-course="appliedProjects">
                 <i class="icon1 fas fa-pen-nib "></i>
                 <p class="name">[ Applied Projects I ]</p>
                 <img src="./img/courses-img/applied-projects-1.png" alt="Digital Graphics">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="serverSide">
                 <i class="icon2 fas fa-circle"></i>
                 <p class="name">[ Server-Side Web Development ]</p>
                 <img src="./img/courses-img/server-side-web-development.png" alt="Introduction to DSLR">
             </div>
-            <div class="selector-item">
+            <div class="selector-item" data-course="webProduction">
                 <i class="icon3 fas fa-globe-asia"></i>
                 <p class="name">[ Web Production ]</p>
                 <img src="./img/courses-img/web-production.png" alt="Responsive Web Design">
             </div>
-            <div class="selector-item">
-                    <i class="icon4 fas fa-backward"></i>
-                    <p class="name">[ Motion Graphics ]</p>
-                    <img src="./img/courses-img/motion-graphics.png" alt="Design Thinking">
-                </div>
-                <div class="selector-item">
-                        <i class="icon5 fas fa-desktop"></i>
-                        <p class="name">[ Project Management ]</p>
-                        <img src="./img/courses-img/project-management-skills.png" alt="Design Foundations">
-                    </div>
-    
-    </div>
+            <div class="selector-item" data-course="motionGraphics">
+                <i class="icon4 fas fa-backward"></i>
+                <p class="name">[ Motion Graphics ]</p>
+                <img src="./img/courses-img/motion-graphics.png" alt="Design Thinking">
+            </div>
+            <div class="selector-item" data-course="projectManagement">
+                <i class="icon5 fas fa-desktop" data-course="projectManagement"></i>
+                <p class="name">[ Project Management ]</p>
+                <img src="./img/courses-img/project-management-skills.png" alt="Design Foundations">
+            </div>
 
-    
-    <hr></hr>
-    <div class="info-container">
-        <div class="info-body">
-        <div class="profile">
-            <div class="top">
-                <div class="info">
-                   <div class="profile">
-                   <h2>Applied Projects I</h2>
-                   <li>MTM6360</li>
-                   <li>90.0/Hours</li>
-                </div>
-                <div class="line"></div>
-                <div class="body">
-                        <p>Students are provided an opportunity to work with real clients or on industry-reflective projects, using their skills to build real-world applications and multimedia products. Working in teams, students plan, manage and develop a project through the full project cycle, from proposal to post-mortem, while developing teamwork skills and using the techniques and best practices acquired through the Project Management Skills class. Students are expected to make a presentation of final project work.
-                        </p>
-                    </div>
-                </div>
         </div>
-        </div>
-    </div>
-    </div>
-    <div class="info-container">
-        <div class="info-body">
-        <div class="profile">
-            <div class="top">
-                <div class="info">
-                   <div class="profile">
-                   <h2>Server-Side Web <br>Development</h2>
-                   <li>MTM6331</li>
-                   <li>60.0/Hours</li>
-                </div>
-                <div class="line"></div>
-                <div class="body">
-                        <p>Having static content works well if your website only has a few pages. However, today's modern sites frequently have thousands of pages. Building on the importance of dynamic websites learned through their experiences with Content Management Systems, students leverage databases to store and output content and change websites content and interface elements based on user interactions. The focus is on creating dynamic data and APIs to be used with responsive websites.
-                        </p>
+        <hr>
+        </hr>
+        <div class="info-container" data-course="appliedProjects">
+            <div class="info-body">
+                <div class="profile">
+                    <div class="top">
+                        <div class="info">
+                            <div class="profile">
+                                <h2>Applied Projects I</h2>
+                                <li>MTM6360</li>
+                                <li>90.0/Hours</li>
+                            </div>
+                            <div class="line"></div>
+                            <div class="body">
+                                <p>Students are provided an opportunity to work with real clients or on
+                                    industry-reflective projects, using their skills to build real-world
+                                    applications and multimedia products. Working in teams, students plan, manage
+                                    and develop a project through the full project cycle, from proposal to
+                                    post-mortem, while developing teamwork skills and using the techniques and best
+                                    practices acquired through the Project Management Skills class. Students are
+                                    expected to make a presentation of final project work.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="info-container">
-    <div class="info-body">
-    <div class="profile">
-        <div class="top">
-            <div class="info">
-               <div class="profile">
-               <h2>Web Production</h2>
-               <li>MTM6330</li>
-               <li>45.0/Hours</li>
+        <div class="info-container hidden" data-course="serverSide">
+            <div class="info-body">
+                <div class="profile">
+                    <div class="top">
+                        <div class="info">
+                            <div class="profile">
+                                <h2>Server-Side Web Development</h2>
+                                <li>MTM6331</li>
+                                <li>60.0/Hours</li>
+                            </div>
+                            <div class="line"></div>
+                            <div class="body">
+                                <p>Having static content works well if your website only has a few pages. However,
+                                    today's modern sites frequently have thousands of pages. Building on the
+                                    importance of dynamic websites learned through their experiences with Content
+                                    Management Systems, students leverage databases to store and output content and
+                                    change websites content and interface elements based on user interactions. The
+                                    focus is on creating dynamic data and APIs to be used with responsive websites.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------ -->
             </div>
-            <div class="line"></div>
-            <div class="body">
-                    <p>Despite the variety of websites found online today there are many common problems that every developer needs to solve. Building on the web design and development skills learned in the first two terms students learn how to increase their productivity by using a variety of industry standard tools and frameworks.
-                    </p>
+
+        </div>
+
+        <div class="info-container hidden" data-course="webProduction">
+            <div class="info-body">
+                <div class="profile">
+                    <div class="top">
+                        <div class="info">
+                            <div class="profile">
+                                <h2>Web Production</h2>
+                                <li>MTM6330</li>
+                                <li>45.0/Hours</li>
+                            </div>
+                            <div class="line"></div>
+                            <div class="body">
+                                <p>Despite the variety of websites found online today there are many common problems
+                                    that
+                                    every developer needs to solve. Building on the web design and development skills
+                                    learned in the first two terms students learn how to increase their productivity by
+                                    using a variety of industry standard tools and frameworks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container hidden" data-course="motionGraphics">
+            <div class="info-body">
+                <div class="profile">
+                    <div class="top">
+                        <div class="info">
+                            <div class="profile">
+                                <h2>Motion Graphics</h2>
+                                <li>MTM6300</li>
+                                <li>45.0/Hours</li>
+                            </div>
+                            <div class="line"></div>
+                            <div class="body">
+                                <p>Motion graphics, typography, special effects, and animation are used in the industry
+                                    to
+                                    market and sell products and services. Students enhance existing video footage and
+                                    create brand- or product-based animation sequences through industry-standard motion
+                                    graphics software packages. Students work with multiple forms of media, syncing
+                                    together audio, video, transitions and added effects to create professional quality
+                                    video.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-container hidden" data-course="projectManagement">
+            <div class="info-body">
+                <div class="profile">
+                    <div class="top">
+                        <div class="info">
+                            <div class="profile">
+                                <h2>Project Management Skills</h2>
+                                <li>MTM6361</li>
+                                <li>45.0/Hours</li>
+                            </div>
+                            <div class="line"></div>
+                            <div class="body">
+                                <p>Effective management of time, resources, clients, and teams is crucial to the
+                                    success of
+                                    any project. Students learn the theory of project management, following industry
+                                    standard guidelines and best practices. The full project cycle is explored,
+                                    including
+                                    planning, managing risks, intellectual property rights, client and team
+                                    communication,
+                                    project scope, project documentation and closure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-<div class="info-container">
-    <div class="info-body">
-    <div class="profile">
-        <div class="top">
-            <div class="info">
-               <div class="profile">
-               <h2>Motion Graphics</h2>
-               <li>MTM6300</li>
-               <li>45.0/Hours</li>
-            </div>
-            <div class="line"></div>
-            <div class="body">
-                    <p>Motion graphics, typography, special effects, and animation are used in the industry to market and sell products and services. Students enhance existing video footage and create brand- or product-based animation sequences through industry-standard motion graphics software packages. Students work with multiple forms of media, syncing together audio, video, transitions and added effects to create professional quality video.
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
-</div>
-<div class="info-container">
-    <div class="info-body">
-    <div class="profile">
-        <div class="top">
-            <div class="info">
-               <div class="profile">
-               <h2>Project Management Skills</h2>
-               <li>MTM6361</li>
-               <li>45.0/Hours</li>
-            </div>
-            <div class="line"></div>
-            <div class="body">
-                    <p>Effective management of time, resources, clients, and teams is crucial to the success of any project. Students learn the theory of project management, following industry standard guidelines and best practices. The full project cycle is explored, including planning, managing risks, intellectual property rights, client and team communication, project scope, project documentation and closure.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+    <script src="./scripts/list-handler.js"></script>
 </body>
 <footer>
     <div class="all-info">
@@ -340,11 +410,11 @@
           <a>613-727-4723</a>
       </div> 
       <div class="social">
-          <a href="https://facebook.com/" class="social-icon fab fa-facebook"></a>
-          <a href="https://twitter.com/" class="social-icon fab fa-twitter"></a>
-          <a href="https://linkin.com/" class="social-icon fab fa-linkedin"></a>
-          <a href="https://instagram.com/" class="social-icon fab fa-instagram"></a>
-      </div>
+        <a href="https://www.facebook.com/algonquincollege/" target="_blank" class="social-icon fab fa-facebook"></a>
+        <a href="https://twitter.com/AlgonquinColleg" target="_blank" class="social-icon fab fa-twitter"></a>
+        <a href="https://ca.linkedin.com/school/algonquincollege/" target="_blank" class="social-icon fab fa-linkedin"></a>
+        <a href="https://www.instagram.com/algonquincollege/" target="_blank" class="social-icon fab fa-instagram"></a>
+    </div>
     </div>
       <div class="copyright">
           <p>©2018 Algonquin College of Applied Arts and Technology </p>

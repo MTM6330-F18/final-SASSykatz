@@ -1,0 +1,22 @@
+.page .section2 {
+  background-image: url("../../img/application/backpack.jpg") !important; }
+
+.page h1 {
+  text-align: center;
+  padding: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .page h1 {
+      padding: 0rem; } }
+
+.page .application, .page .admissionn {
+  padding: 2rem; }
+  @media only screen and (min-width: 768px) {
+    .page .application, .page .admissionn {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
+
+.page h2 {
+  font-size: 1.3rem; }
+
+.page h3 {
+  font-size: 1.2rem; }

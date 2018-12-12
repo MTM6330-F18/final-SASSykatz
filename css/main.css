@@ -346,13 +346,9 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-<<<<<<< HEAD
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
-=======
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
->>>>>>> master
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+ 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+ sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -854,54 +850,6 @@ pre {
 
 .row {
   display: flex;
-<<<<<<< HEAD
-  height: 70px;
-}
-.navbar::before {
-  content: ' ';
-  border-top: 2px solid #d16199;
-  position: absolute;
-  top: 0px;
-  width: 100%;
-}
-.navbar .logo {
-  align-items: center;
-  display: flex;
-  flex-grow: 1;
-  height: 100%;
-  padding-left: 1rem;
-}
-.navbar .logo img {
-  height: calc(100% - 1.5rem);
-  width: auto;
-}
-.navbar .nav {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-.navbar .menu-item {
-  align-items: center;
-  border-bottom: 2px solid transparent;
-  color: #7a5266;
-  display: flex;
-  flex-grow: 1;
-  height: 70px;
-  justify-content: center;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-.navbar .menu-item:hover {
-  background-color: #f0f0f0;
-  cursor: pointer;
-}
-.navbar .menu-item:active,
-.navbar .menu-item.active {
-  border-color: #e6d6de;
-}
-=======
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
@@ -6760,4 +6708,3 @@ body {
     width: 30%;
     margin: 0 auto;
     padding: 1rem; }
->>>>>>> master

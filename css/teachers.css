@@ -6813,7 +6813,7 @@ body .selector-container {
         .info-container .info-body .info .profile h2 {
           font-size: 1.1rem;
           font-weight: bold;
-          line-height: 0.2rem; }
+          line-height: 1.6; }
         .info-container .info-body .info .profile h3 {
           font-size: 0.9rem;
           font-style: italic;

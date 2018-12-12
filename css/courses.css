@@ -32,3 +32,8 @@
     transform: scaleY(0); }
   100% {
     transform: scaleY(1); } }
+
+.schedule {
+  margin-bottom: 2rem; }
+  .schedule img {
+    width: 100%; }

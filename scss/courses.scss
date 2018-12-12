@@ -1,33 +1,51 @@
-.page{
-.sub-title{
-    width: 100%;
-    margin: 0 auto;
-    h2{
-        max-width: 1050px;
-        margin: 0 auto;
-        padding: 1rem 0 1rem 0 ;
-    }
+.splash2 {
+  background-color: $ac-green;
 }
 
-.info-container {
+.section2 {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  background-size: cover;
+  background-image: url('../../img/career-img/studio.jpg');
+  background-position: center;
+  filter: contrast(1.2) brightness(0.7) grayscale(100%);
+  mix-blend-mode: soft-light;
+  @media only screen and (min-width: 768px) {
+    background-position-y: -50px;
+    height: 500px;
+  }
+}
+
+.page {
+  .sub-title {
+    width: 100%;
+    margin: 0 auto;
+    h2 {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 1rem 0 1rem 0;
+    }
+  }
+
+  .info-container {
     .info-body {
-        
       .info {
-       
         margin: 0;
         @media only screen and (min-width: 768px) {
-            justify-content: space-evenly;
-          }
+          justify-content: space-evenly;
+        }
         .profile {
           h2 {
-              font-size: 1.5rem;
-              line-height: 1.5rem;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
           }
           h3 {
-              font-style: normal;
+            font-style: normal;
           }
+        }
       }
-}
-}
-}
+    }
+  }
 }

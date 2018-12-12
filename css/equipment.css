@@ -6696,7 +6696,9 @@ h2 {
 
 .grid {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto; }
   @media screen and (min-width: 500px) {
     .grid {
       display: grid;

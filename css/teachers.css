@@ -311,7 +311,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;
@@ -6736,11 +6736,13 @@ body .selector-container {
       mix-blend-mode: soft-light;
       transition: 0.8s ease-out; }
   body .selector-container .active p,
-  body .selector-container .active .fas, body .selector-container .selector-item:hover p,
+  body .selector-container .active .fas,
+  body .selector-container .selector-item:hover p,
   body .selector-container .selector-item:hover .fas {
     opacity: 1;
     transition: 0.2s ease-in; }
-  body .selector-container .active img, body .selector-container .selector-item:hover img {
+  body .selector-container .active img,
+  body .selector-container .selector-item:hover img {
     mix-blend-mode: normal;
     filter: contrast(1) brightness(1) grayscale(0%);
     transform: scale(1.02);
@@ -6826,3 +6828,17 @@ body .selector-container {
       @media only screen and (min-width: 768px) {
         .info-container .info-body ul {
           padding-bottom: 2rem; } }
+
+.hidden {
+  display: none; }
+
+.show {
+  animation: slide-in 0.4s forwards; }
+
+@keyframes slide-in {
+  0% {
+    display: flex; }
+  1% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }

@@ -188,41 +188,17 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
-<<<<<<< HEAD
 /**
  * Correct the padding in Firefox.
-=======
-<<<<<<< HEAD
-/**
- * Correct the padding in Firefox.
-=======
-/**
- * Correct the padding in Firefox.
->>>>>>> master
->>>>>>> devDaniel
  */
 fieldset {
   padding: 0.35em 0.75em 0.625em; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> devDaniel
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
-<<<<<<< HEAD
-=======
-=======
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
->>>>>>> master
->>>>>>> devDaniel
  */
 legend {
   box-sizing: border-box;
@@ -335,15 +311,7 @@ html {
 body {
   background-color: #feffff;
   color: rgba(0, 0, 0, 0.78);
-<<<<<<< HEAD
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-=======
-<<<<<<< HEAD
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-=======
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
->>>>>>> master
->>>>>>> devDaniel
   font-size: 100%;
   line-height: 1.64rem;
   margin: 0;

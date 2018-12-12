@@ -44,6 +44,8 @@
   animation: slide-in 0.4s forwards;
 }
 
+//animation to be used in js list handler
+
 @keyframes slide-in {
   0% {
     display: flex;

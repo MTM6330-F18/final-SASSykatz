@@ -5,7 +5,7 @@ body {
     padding-top: 1rem;
     text-align: center;
   }
-
+// This creates the selector container
   .selector-container {
     width: auto;
     height: auto;
@@ -19,7 +19,7 @@ body {
     padding-left: 3rem;
     margin-bottom: 2rem;
     justify-content: center;
-
+//styles all images in the selector and clips the images into a polygon
     .selector-item {
       margin-left: -35px;
       width: 200px;
@@ -29,7 +29,7 @@ body {
       -webkit-clip-path: polygon(16% 0, 98% 0, 84% 100%, 2% 100%);
       clip-path: polygon(16% 0, 98% 0, 84% 100%, 2% 100%);
       display: flex;
-
+// applies the style to the font awesome icon for each selector item
       .fas {
         z-index: 1;
         position: absolute;
@@ -38,7 +38,7 @@ body {
         opacity: 0;
         transition: 0.8s ease-out;
       }
-
+// sets all colors for each item
       .icon1 {
         color: rgb(255, 255, 255);
       }
@@ -58,7 +58,7 @@ body {
       .icon5 {
         color: rgb(255, 117, 244);
       }
-
+// aligns each title for selector item into center of image
       p {
         z-index: 1;
         color: #fff;
@@ -77,24 +77,26 @@ body {
         left: 0;
         width: 200px;
         height: 200px;
+      // applies image filter to all images in selector item
         filter: contrast(1.2) brightness(0.7) grayscale(100%);
         mix-blend-mode: soft-light;
         transition: 0.8s ease-out;
       }
     }
-
+// sets a new style for selector items on hover
     .active,
     .selector-item:hover {
-
+// shows text
       p,
       .fas {
         opacity: 1;
         transition: 0.2s ease-in;
       }
-
+// removes image filter on selector item that is being hovered 
       img {
         mix-blend-mode: normal;
         filter: contrast(1) brightness(1) grayscale(0%);
+        // zooms into image on hover
         transform: scale(1.02);
         transition: 0.2s ease-in;
         cursor: pointer;
@@ -102,7 +104,7 @@ body {
     }
   }
 }
-
+// styles info container for the selected selector item
 .info-container {
   border-radius: 10px;
   margin-top: 2rem;
@@ -116,7 +118,7 @@ body {
     height: 150px;
     border-radius: 50%;
   }
-
+// clips path info-body container into a polygon to show info container black bg
   .info-body {
     background-color: $bg;
     border-radius: 10px;
@@ -124,14 +126,14 @@ body {
     border-left: none;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
-
+// changes the clip path for mobile
     @media only screen and (min-width: 768px) {
       border-left: $ac-green 10px solid;
       border-top: none;
       -webkit-clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
       clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
     }
-
+// formats text in info for desktop and mobile
     .info {
       display: flex;
       flex-wrap: wrap;
@@ -144,7 +146,7 @@ body {
         align-items: flex-start;
         flex-direction: row;
       }
-
+    // applies the green stroke/shadow and radius around image
       img {
         margin: 2rem;
         box-shadow: 0 0 0 10px $ac-light, 0 0 0 15px rgba($ac-light, 0.3),
@@ -161,7 +163,7 @@ body {
           padding: 0rem;
         }
       }
-
+      // adds slanted line
       .line {
         width: 3px;
         height: 200px;
@@ -202,7 +204,7 @@ body {
     .facts {
       margin: 2rem;
     }
-
+// resets ul icon
     ul {
       list-style-image: url('../../img/li-marker.png') !important;
       padding-bottom: 5rem;
